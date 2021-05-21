@@ -1,0 +1,118 @@
+programa marcos1
+var num1, num2, resultado: inteiro
+inicio
+escreva ("digite o primeiro numero:")
+leia (num1)
+escreva ("digite o segundo numero:")
+leia (num2)
+resultado = (num1 * num2)
+escreva ("o resultado da multiplicacao e:", resultado)
+fim
+
+programa marcos2
+var num1, num2, num3, num4, resultado: real
+inicio
+escreva ("digite a primeira nota:")
+leia (num1)
+escreva ("digite a segunda nota:")
+leia (num2)
+escreva ("digite a terceira nota:")
+leia (num3)
+escreva ("digite a primeira nota:")
+leia (num4)
+resultado = (num1 + num2 + num3 + num4)/4
+escreva ("o resultado da media aritmetica e:", resultado)
+fim
+
+programa marcos3
+var num1, num2, resultado, rendimento: real
+inicio
+escreva ("valor do deposito:")
+leia (num1)
+escreva ("valor da taxa de juros:")
+leia (num2)
+rendimento = (num1 * num2)/100
+escreva ("o resultado do rendimento e:", rendimento)
+resultado = (rendimento + num1)
+escreva ("o resultado do rendimento e:", resultado)
+fim
+
+programa marcos4
+var salmin, salfunc, qtdesalmin: real
+inicio
+escreva ("digite o valor do salario do funcionario:")
+leia (salfunc)
+escreva ("digite o valor do salario minimo atual:")
+leia (salmin)
+qtdesalmin = (salfunc/salmin)
+escreva ("esse funcionario recebe este valor em salarios minimos:", qtdesalmin)
+fim
+
+programa marcos5
+var basetri, altutri, areatri: inteiro
+inicio
+escreva ("digite o valor da base do triangulo:")
+leia(basetri)
+escreva ("digite o valor da altura do triangulo:")
+leia (altutri)
+areatri = (basetri * altutri)/2
+escreva ("a area do triangulo e:", areatri)
+fim
+
+programa marcos6
+var ladoquadrado1, ladoquadrado2, areaquad: inteiro
+inicio
+escreva ("digite o valor do primeiro lado do quadrado:")
+leia (ladoquadrado1)
+escreva ("digite o valor do segundo lado do quadrado:")
+leia (ladoquadrado2)
+areaquad = (ladoquadrado1 * ladoquadrado2)
+escreva ("a area do quadrado e:", areaquad)
+fim
+
+programa marcos7
+var rai, are: real
+inicio
+escreva ("digite o raio do circulo:")
+leia (rai)
+are: = (rai ^ 2) * 3,14
+escreva ("a area do circulo e:", are)
+fim
+
+programa marcos8
+var salfunc, impren: real
+inicio
+escreva ("salario do funcionario:")
+leia (salfunc)
+impren = (salfunc * 5)/100
+escreva ("o valor do imposto de renda a ser pago e:", impren)
+fim
+
+programa marcos9
+var salfunc, aumentsal, salcomaument: real
+inicio
+escreva ("salario atual do funcionario:")
+leia (salfunc)
+aumentsal = (salfunc * 25)/100
+escreva ("o valor do aumento salarial e de:", aumentsal)
+salcomaument = (salfunc + aumentsal)
+escreva ("o valor do novo salario e de:", salcomaument)
+fim
+
+programa marcos10
+var salmin, qtdekw, kwgasto, multikw, desckw, kwfinal: real
+inicio
+escreva ("valor do salario minimo:")
+leia (salmin)
+qtdekw = (salmin/5)
+escreva ("o valor em reais de cada quilowatt e de:", qtdekw)
+escreva ("insira quilowatts foram gastos no mes:")
+leia (kwgasto)
+multikw = (kwgasto * qtdekw)
+escreva ("o valor a ser pago dessa residencia em reais e de:", multikw)
+desckw = (multikw * 15)/100
+escreva: (o valor do desconto e de:", desckw)
+kwfinal = (multikw - desckw)
+escreva: ("o valor a ser pago com o desconto sera de:", kwfinal)
+
+

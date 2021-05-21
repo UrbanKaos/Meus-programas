@@ -1,0 +1,264 @@
+Programa marcos1
+var num1, num2: inteiro
+inicio
+escreva ("Digite um número inteiro qualquer: ")
+leia (num1)
+escreva ("Digite um segundo número inteiro qualquer: ")
+leia (num2)
+se (num1 > num2) entao
+    escreva ("O maior número é: ", num1)
+fim se
+se (num1 < num2) entao
+    escreva ("O maior número é: ", num2)
+senao
+    escreva ("Os dois números são iguais")
+fim se
+fim
+
+
+Programa marcos2
+var num1, num2: inteiro
+inicio
+escreva ("Digite um número inteiro qualquer: ")
+leia (num1)
+escreva ("Digite um segundo número inteiro qualquer: ")
+leia (num2)
+se (num1 > num2) entao
+    escreva ("Os numeros em ordem decrescente são: ", num1, num2)
+fim se
+se (num1 < num2) entao
+    escreva ("Os numeros em ordem decrescente são: ", num2, num1)
+senao
+    escreva ("Os dois numeros sao iguais")
+fim se
+fim
+
+
+Programa marcos3
+var num1, num2, num3, num4, media: real
+inicio
+escreva ("Digite a primeira nota do aluno: ")
+leia (num1)
+escreva ("Digite a segunda nota do aluno: ")
+leia (num2)
+escreva ("Digite a terceira nota do aluno: ")
+leia (num3)
+escreva ("Digite a quarta nota do aluno: ")
+leia (num4)
+media = (num1 + num2 + num3 + num4) / 4
+se (media >= 7,0) entao
+    escreva("APROVADO")
+senao
+    escreva ("REPROVADO")
+fim se
+fim
+
+
+Programa marcos4
+var num1, num2, num3, media: real
+inicio
+escreva ("Digite a primeira nota do aluno: ")
+leia (num1)
+escreva ("Digite a segunda nota do aluno: ")
+leia (num2)
+escreva ("Digite a terceira nota do aluno: ")
+leia (num3)
+media = (num1 + num2 + num3) / 3
+se (media <= 5) entao
+    escreva ("Reprovado")
+senao
+    se (media <= 7) entao
+        escreva ("exame")
+    senao
+        escreva ("aprovado")
+    fim se
+fim se
+fim
+
+    
+Programa marcos5
+var num1, num2, num3, pond1, pond2, pond3, resultado: real
+inicio
+escreva ("Digite a primeira nota do aluno: ")
+leia (num1)
+escreva ("Digite o peso da primeira nota do aluno: ")
+leia (pond1)
+escreva ("Digite a segunda nota do aluno: ")
+leia (num2)
+escreva ("Digite o peso da segunda nota do aluno: ")
+leia (pond2)
+escreva ("Digite a terceira nota do aluno: ")
+leia (num3)
+escreva ("Digite o peso da terceira nota do aluno: ")
+leia (pond3)
+resultado = (num1 * pond1 + num2 * pond2 + num3 * pond3) / 3
+se (resultado < 5)  entao
+    escreva ("Conceito: E, com média poderada de: ", resultado)
+senao
+    se (resultado <= 6) entao
+        escreva ("Conceito: D, com média ponderada de: ", resultado)
+    senao
+        se (resultado <= 7) entao
+            escreva ("Conceito: C, com média ponderada de: ", resultado)
+        senao
+            se (resultado <= 8) entao
+                escreva ("Conceito: B, com média ponderada de: ", resultado)
+            senao
+                escreva ("Conceito: A, com média ponderada de ", resultado)
+            fim se
+        fim se
+    fim se
+fim se
+fim
+
+
+Programa marcos6
+var num1: inteiro
+inicio
+escreva ("Digite a idade: ")
+leia (num1)
+se (num1 <= 2)  entao
+    escreva ("Recém-nascido")
+senao
+    se (num1 <= 10) entao
+        escreva ("Criança")
+    senao
+        se (num1 <= 17) entao
+            escreva ("Adolescente")
+        senao
+            se (num1 <= 60) entao
+                escreva ("Adulto")
+            senao
+                escreva ("Idoso")
+            fim se
+        fim se
+    fim se
+fim se
+fim
+
+
+Programa marcos7
+var cod: inteiro
+inicio
+escreva ("Digite o código do funcionario: ")
+leia (cod)
+se (cod = 1) entao
+    escreva ("Cargo: Escriturário, tem direito a 50% de aumento")
+senao
+    se (cod = 2) entao
+        escreva ("Cargo: Secretária, tem direito a 35% de aumento")
+    senao
+        se (cod = 3) entao
+            escreva ("Cargo: Caixa, tem direito a 20% de aumento")
+        senao
+            se (cod = 4) entao
+                escreva ("Cargo: Gerente, tem direito a 10% de aumento")
+            senao
+                se (cod = 5) entao
+                    escreva ("Cargo: Diretor, tem direito a 5% de aumento")
+                fim se
+            fim se
+        fim se
+    fim se
+fim se
+fim
+
+
+Programa marcos9
+var he, hf, h: real
+inicio
+escreva ("Digite o número de horas extras: ")   
+leia (he)
+escreva ("Digite número de horas-falta: ")
+leia (hf)
+hfm = hf * 60
+hem = he * 60
+h = hem – (2/3 * hfm)
+se (h <= 600) entao
+    escreva ("O número de horas extras é: ", he, "o número de horas-falta é: ", hf, "e o valor do prémio é: R$1100,00")
+senao
+    se (h <= 1200) entao
+        escreva ("O número de horas extras é: ", he, "o número de horas-falta é: ", hf, "e o valor do prémio é: R$1200,00")
+    senao
+        se (h <= 1800) entao
+            escreva ("O número de horas extras é: ", he, "o número de horas-falta é: ", hf, "e o valor do prémio é: R$1300,00")
+        senao
+            se (h <= 2400) entao
+                escreva ("O número de horas extras é: ", he, "o número de horas-falta é: ", hf, "e o valor do prémio é: R$1400,00")
+            senao
+                se (h > 2400) entao
+                    escreva ("O número de horas extras é: ", he, "o número de horas-falta é: ", hf, "e o valor do prémio é: R$1500,00")
+                fim se
+            fim se
+        fim se
+    fim se
+fim se
+fim
+
+
+
+
+Programa marcos10
+var A, B: real
+escreva ("Digite o valor do primeiro coeficiente: ")
+leia (A)
+escreva ("Digite o valor do segundo coeficiente: ")
+leia (B)
+x = -B / -A
+se (x <> 0) entao
+    escreva ("A raiz é: ", x)
+senao
+    escreva ("Não é possível definir uma raiz")
+
+
+
+
+Programa marcos11
+var A, B, C: real
+escreva ("Digite o valor do primeiro coeficiente: ")
+leia (A)
+escreva ("Digite o valor do segundo coeficiente: ")
+leia (B)
+escreva ("Digite o valor do terceiro coeficiente: ")
+leia (C)
+delta = B ** 2 - 4 * A * C
+raizdelta = delta ** 0.5
+x1 = (-B + raizdelta) / (2 * A)
+x2 = (-B - raizdelta) / (2 * A)
+x0 = -B / (2 * A)
+se (delta > 0) entao:
+    escreva ("x1 = ", x1)
+    escreva ("x2 = ", x2)
+senao
+    se (delta == 0):
+        escreva("x = ", x0)
+    fim se
+fim se
+fim
+
+
+
+Programa marcos12
+var A, B, C: inteiro
+inicio
+escreva ("Digite o primeiro lado: ")
+leia (A)
+escreva ("Digite o segundo lado: ")
+leia (B)
+escreva ("Digite o terceiro lado: ")
+leia (C)
+se (A < B + C e B < A + C e C < A + B) entao:
+    escreva ("Sim, é um triangulo!")
+    se (A = B e B = C) entao:
+        escreva ("Este triangulo é um triangulo equilátero")
+    senao 
+        se (A <> B <> C <> A) entao:
+            escreva("Este triangulo é um triangulo escaleno")
+        senao
+            escreva ("Este triangulo é um triangulo isóceles")
+senao:
+    print("Não é um triangulo!")
+        fim se
+    fim se
+fim se
+fim
